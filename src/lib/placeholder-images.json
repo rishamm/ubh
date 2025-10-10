@@ -1,0 +1,32 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-women",
+      "type": "video",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/vid1.mp4",
+      "imageHint": "women"
+    },
+    {
+      "id": "hero-2",
+      "type": "image",
+      "description": "Autumn collection promo image featuring cozy family wear",
+      "imageUrl": "/img1.png",
+      "imageHint": "family autumn"
+    },
+    {
+      "id": "men",
+      "type": "image",
+      "description": "Relaxed beach day fashion for the whole family",
+      "imageUrl": "/men1.png",
+      "imageHint": "family beach"
+    },
+    {
+      "id": "kids",
+      "type": "image",
+      "description": "Kids's lookbook highlighting minimal and elegant styles",
+      "imageUrl": "/kid1.jpg",
+      "imageHint": "Kids"
+    }
+  ]
+}

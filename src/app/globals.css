@@ -1,0 +1,619 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 100% 99%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 30 100% 99%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 30 100% 99%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 30 5.9% 90%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 30 5.9% 90%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 30 5.9% 90%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 30 5.9% 90%;
+    --input: 30 5.9% 90%;
+    --ring: 0 0% 0%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    --color-dark: #000000;
+    --color-white: #fff;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 60 9.1% 97.8%;
+    --popover: 24 9.8% 10%;
+    --popover-foreground: 60 9.1% 97.8%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 60 9.1% 97.8%;
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 0 0% 0%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+
+html, body {
+  /* Remove default margins and padding */
+  margin: 0;
+  padding: 0;
+  /* Make sure html and body fill the full viewport */
+  height: 100%;
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+  }
+  
+body.no-scroll {
+  overflow: hidden !important;
+  position: fixed;
+  width: 100%;
+}
+
+
+
+  h1, h3, h4, h5, h6, p, a, div, li, button, label, input, textarea {
+    font-family: var(--font-body), "Atkinson Hyperlegible", "Atkinson Hyperlegible Placeholder", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 108%;
+    text-transform: uppercase;
+  }
+
+  p {
+     margin-bottom: 16px;
+  }
+}
+
+/* Stacked Cards Hero CSS */
+.stacked-cards-hero-body {
+  min-height: 100vh;
+  background: var(--color-dark);
+}
+
+.stacked-cards-hero-header {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 64px 20px;
+  color: white;
+  text-align: center;
+}
+
+.stacked-cards-hero-header p {
+  margin-bottom: 16px;
+}
+
+.stacked-cards-hero-header h1 {
+  margin-bottom: 24px;
+  font-size: 44px;
+}
+
+.stacked-cards-hero-header div {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.stacked-cards-hero-header a {
+  font-size: 24px;
+  color: var(--color-white);
+  opacity: 1;
+  transition: opacity .3s linear;
+}
+
+.stacked-cards-hero-header a:hover {
+  opacity: .8;
+}
+
+.l-cards {
+  width: 100%;
+  padding-top: 0px;
+}
+
+.c-card {
+  position: relative;
+  margin-top: 0px;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background-color: white;
+  border: 1px solid var(--color-dark);
+  overflow: hidden;
+}
+
+.c-card__description {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  color: white;
+  max-width: 50%;
+}
+
+.c-card__tagline {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.c-card__title {
+  font-size: 36px;
+}
+
+.c-card__excerpt {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.c-card__cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.c-card__cta a {
+  width: max-content;
+  padding: 12px 24px;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.c-card__cta a:hover {
+  background-color: white;
+  color: black;
+}
+
+.c-card__figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.c-card__figure::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+
+.c-card__figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+@media (min-width: 1441px) {
+  .c-card__figure img {
+    object-fit: cover;
+  }
+}
+
+.spacer {
+  width: 100%;
+  height: 10vh;
+}
+
+/* Video Section CSS */
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background-color: var(--color-dark);
+}
+
+.video-section__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.animated-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 1rem;
+  background-color: var(--color-dark);
+}
+
+.menu-toggle {
+  
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Active state */
+.menu-toggle.menu-toggle-active span:nth-child(1) {
+  transform: rotate(45deg) translate(1px, 0px);
+}
+
+.menu-toggle.menu-toggle-active span:nth-child(2) {
+ display: none;
+}
+
+.menu-toggle.menu-toggle-active span:nth-child(3) {
+  transform: rotate(-45deg) translate(1px, 0px);
+}
+
+/* Preloader styles */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(var(--vh, 1vh) * 100);
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.preloader-content {
+  display: flex;
+  align-items: flex-start;
+  color: white;
+}
+
+
+/* Stacked Cards Hero Mobile CSS */
+.stacked-cards-hero-body-mobile {
+  min-height: 100vh;
+  background: var(--color-dark);
+}
+
+.stacked-cards-hero-header-mobile {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 64px 20px;
+  color: white;
+  text-align: center;
+}
+
+.stacked-cards-hero-header-mobile p {
+  margin-bottom: 16px;
+}
+
+.stacked-cards-hero-header-mobile h1 {
+  margin-bottom: 24px;
+  font-size: 44px;
+}
+
+.stacked-cards-hero-header-mobile div {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.stacked-cards-hero-header-mobile a {
+  font-size: 24px;
+  color: var(--color-white);
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+
+.stacked-cards-hero-header-mobile a:hover {
+  opacity: 0.8;
+}
+
+.l-cards-mobile {
+  width: 100%;
+  padding-top: 0px;
+}
+
+.c-card-mobile {
+  position: relative;
+  margin-top: 0px;
+  width: 100%;
+  height: 90vh;
+  min-height: 600px;
+  background-color: white;
+  border: 1px solid var(--color-dark);
+  overflow: hidden;
+}
+
+.c-card__description-mobile {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 70%;
+  padding-left: 10px;
+  color: white;
+  max-width: 100%;
+
+}
+
+.c-card__tagline-mobile {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.c-card__title-mobile {
+   margin-top: 3px;
+  font-size: 40px;
+  font-family: var(--font-heading), "Atkinson Hyperlegible", "Atkinson Hyperlegible Placeholder", sans-serif;
+}
+
+.c-card__excerpt-mobile {
+  margin-top: 3px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.c-card__cta-mobile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.c-card__cta-mobile a {
+  width: max-content;
+  padding: 12px 24px;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.c-card__cta-mobile a:hover {
+  background-color: white;
+  color: black;
+}
+
+.c-card__figure-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.c-card__figure-mobile::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.c-card__figure-mobile img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+@media (min-width: 1441px) {
+  .c-card__figure-mobile img {
+    object-fit: contain;
+  }
+}
+
+.spacer-mobile {
+  width: 100%;
+  height: 10vh;
+}
+
+
+/* Home About Section */
+.about-section-container {
+  padding-top: 4rem;
+    padding-right: 0;
+    padding-left: 0;
+  background-color: hsl(var(--primary));
+  padding-bottom: 0rem;
+  height: 100%;
+
+}
+
+.about-section-content {
+  background-color: hsl(var(--background));
+  padding-top: 2rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+  padding-bottom: 0rem;
+}
+
+@media (max-width: 768px) {
+  .about-section-content {
+    padding-top: 2rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+  .about-section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section-container {
+  padding-top: 2rem;
+    padding-right: 0%;
+    padding-left: 0%;
+  background-color: hsl(var(--primary));
+}
+
+}
+
+/* Dark Form Input Styles */
+.form-input-dark {
+  @apply bg-transparent border-0 border-b border-muted-foreground rounded-none text-lg text-primary-foreground placeholder:text-muted-foreground focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-b-secondary;
+}
+.form-input-dark:focus {
+  @apply border-b-secondary;
+}
+
+/* Root / reset for about component */
+.about-page-root {
+  background: var(--background); /* keep your theme background */
+  color: var(--foreground);
+}
+
+/* Hero wrapper */
+.about-hero {
+  position: relative;
+  width: 100%;
+  /* height not forcing a separate scroll on outer container */
+}
+
+/* Sticky background — fills viewport and stays pinned while content scrolls */
+.about-hero__bg {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+  display: block;
+}
+
+/* Make the image cover and scale slightly for cinematic feel */
+.about-hero__bg-img {
+  object-fit: cover;
+  transform-origin: center;
+  /* optional small scale to avoid letterboxing during small motion */
+  transform: scale(1.06);
+}
+
+/* subtle dark overlay for text contrast */
+.about-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Heading wrapper: sticky so heading stays centered while bg pinned */
+.about-hero__heading-wrap {
+  position: sticky;
+  top: 20vh; /* adjust to vertical placement */
+  height: 0; /* we use the sticky offset only */
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  pointer-events: none; /* so clicks pass through if needed */
+}
+
+/* The heading itself */
+.about-hero__heading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  font-size: clamp(48px, 8vw, 150px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  margin: 0;
+  padding: 0 1rem;
+  transform: translateY(0);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Main content area (normal flow) */
+.about-content {
+  position: relative;
+  z-index: 3;
+  background-color: var(--background); /* page background */
+  padding: 4rem 1rem;
+}
+
+
+/* lead paragraph */
+.lead {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--muted-foreground, #e6e6e6);
+}
+
+/* mobile tweaks */
+@media (max-width: 768px) {
+  .about-hero__heading {
+    font-size: clamp(32px, 12vw, 56px);
+    top: 18vh;
+  }
+}
