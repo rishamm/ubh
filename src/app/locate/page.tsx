@@ -48,7 +48,7 @@ export default function LocatePage() {
 
   return (
     <div className="bg-background">
-      <div className="container py-16 md:py-24">
+      <div className="md:px-6 px-0  py-16 md:py-24">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight">Find Us</h1>
           <p className="mt-6 text-lg md:text-xl">
@@ -56,7 +56,7 @@ export default function LocatePage() {
           </p>
         </div>
         
-        <div className="mt-16 h-[600px] rounded-lg overflow-hidden shadow-lg bg-secondary">
+        <div className="mt-16 h-[600px] rounded-none overflow-hidden shadow-lg bg-secondary">
             <MapEmbed lat={primaryStore.lat} lng={primaryStore.lng} />
         </div>
 

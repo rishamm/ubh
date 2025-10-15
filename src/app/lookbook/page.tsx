@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { getPlaceholderImage } from '@/lib/image-helper';
-import { bandCards } from '@/lib/band-data';
+import { lookbookCards } from '@/lib/band-data';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 
@@ -8,7 +8,7 @@ export default function LookbookLandingPage() {
 
   return (
     <div className="bg-background">
-      <div className="container py-16 md:py-24">
+      <div className="md:px-6 px-4  py-16 md:py-24">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight">Lookbooks</h1>
           <p className="mt-6 text-lg md:text-xl">
@@ -17,11 +17,11 @@ export default function LookbookLandingPage() {
         </div>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            {bandCards.map((card) => {
+            {lookbookCards.map((card) => {
                 const image = getPlaceholderImage(card.imageId);
                 return (
                     <Link href={card.link} key={card.imageId}>
-                        <Card className="group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <Card className="group overflow-hidden rounded-none border-0 hover:scale-105 transition-shadow duration-300">
                              <div className="relative aspect-[4/3] overflow-hidden">
                                 {card.type=== "image" ? (
                                                            <Image

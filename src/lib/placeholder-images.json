@@ -25,8 +25,61 @@
       "id": "kids",
       "type": "image",
       "description": "Kids's lookbook highlighting minimal and elegant styles",
-      "imageUrl": "/kid1.jpg",
+      "imageUrl": "/kid1.png",
       "imageHint": "Kids"
-    }
-  ]
+    },
+    {
+      "id": "about-home-first",
+      "type": "image",
+      "description": "Kids's lookbook highlighting minimal and elegant styles",
+      "imageUrl": "/img1.png",
+      "imageHint": "Kids"
+    },
+    {
+      "id": "about-home-second",
+      "type": "image",
+      "description": "Kids's lookbook highlighting minimal and elegant styles",
+      "imageUrl": "/ab1.jpeg",
+      "imageHint": "Kids"
+    },
+     {
+      "id": "home-collection-kids",
+      "type": "image",
+      "description": "Kids's lookbook highlighting minimal and elegant styles",
+      "imageUrl": "/kc2.jpg",
+      "imageHint": "Kids"
+    },
+     {
+      "id": "home-collection-women",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/women.png",
+      "imageHint": "women"
+    
+     },
+     {
+      "id": "lookbook-cover-women",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/women.png",
+      "imageHint": "women"
+    
+     },
+     {
+      "id": "lookbook-cover-men",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/ml1.jpg",
+      "imageHint": "women"
+    
+     },
+     {
+      "id": "lookbook-cover-kids",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/kc2.jpg",
+      "imageHint": "women"
+    
+     }
+    ]
 }

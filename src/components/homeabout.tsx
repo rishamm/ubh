@@ -6,13 +6,10 @@ import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 export default function HomeAboutSection() {
-  const image1 = getPlaceholderImage('home-about-1');
-  const image2 = getPlaceholderImage('home-about-2');
+  const image1 = getPlaceholderImage('about-home-first');
+  const image2 = getPlaceholderImage('about-home-second');
 
-  // Main section ref for scroll animation
   const contentRef = useRef(null);
-
-  // Scroll progress for subtle parallax movement
   const { scrollYProgress } = useScroll({
     target: contentRef,
     offset: ['start 100%', 'end 80%'],
@@ -21,7 +18,6 @@ export default function HomeAboutSection() {
   const y = useTransform(scrollYProgress, [0, 1], ['200px', '0px']);
   const scale = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
 
-  // InView for triggering appear animations
   const headingRef = useRef(null);
   const inView = useInView(headingRef, { once: true, margin: '-50px' });
 
@@ -46,16 +42,16 @@ export default function HomeAboutSection() {
 
         {/* Cards */}
         <div className="mt-1 pt-8">
-          <div className="grid md:grid-cols-2 gap-0 about-section-grid">
+          <div className="grid md:grid-cols-2 gap-0 about-section-grid items-start">
             {/* Left Card */}
             <motion.div
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: 'easeOut' }}
               viewport={{ once: true, amount: 0.3 }}
-              className="border border-border flex flex-col gap-0 bg-white shadow-sm"
+              className="border-t border-black bg-white shadow-sm flex flex-col justify-between h-full"
             >
-              <div className="pt-4 px-6 flex flex-col justify-between">
+              <div className="pt-4 px-6 pb-6 flex flex-col">
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +65,7 @@ export default function HomeAboutSection() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.6 }}
-                  className="text-lg md:text-xl text-foreground/80 max-w-md"
+                  className="text-lg md:text-sm text-foreground/80 max-w-md"
                 >
                   We focus on creating high-quality, timeless pieces with ethical
                   production practices, ensuring style with integrity.
@@ -80,7 +76,7 @@ export default function HomeAboutSection() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.3, duration: 0.8, ease: 'easeOut' }}
-                className="w-full h-64 md:h-96 relative"
+                className="relative h-[400px] overflow-hidden shrink-0"
               >
                 <Image
                   src={image1.imageUrl}
@@ -98,9 +94,9 @@ export default function HomeAboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.2, ease: 'easeOut' }}
               viewport={{ once: true, amount: 0.3 }}
-              className="border border-border flex flex-col gap-0 bg-white shadow-sm"
+              className="border-t border-l border-black bg-white shadow-sm flex flex-col justify-between h-full"
             >
-              <div className="pt-4 px-6 flex flex-col justify-between">
+              <div className="pt-4 px-6 pb-6 flex flex-col">
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -114,10 +110,11 @@ export default function HomeAboutSection() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.6 }}
-                  className="text-lg md:text-xl text-foreground/80 max-w-md"
+                  className="text-lg md:text-sm text-foreground/80 max-w-md"
                 >
-                  We blend modern design with sustainability to offer fashion that
-                  enhances self-expression.
+                  We dedicate ourselves to crafting refined, lasting pieces through fair production,
+                  embodying style with honesty and sustainability to offer fashion that enhances
+                  self-expression.
                 </motion.p>
               </div>
 
@@ -125,7 +122,7 @@ export default function HomeAboutSection() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.3, duration: 0.8, ease: 'easeOut' }}
-                className="w-full h-64 md:h-96 relative"
+                className="relative h-[400px] overflow-hidden shrink-0"
               >
                 <Image
                   src={image2.imageUrl}

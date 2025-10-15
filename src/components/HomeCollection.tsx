@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { bandCards } from "@/lib/band-data";
+import { collectionHomeCards } from "@/lib/band-data";
 import { getPlaceholderImage } from "@/lib/image-helper";
 import { Button } from "./ui/button";
 import Link from "next/link";
@@ -20,7 +20,7 @@ const words = "Explore, Our, Collections".split(' ').map(w => w.trim());
 
   return (
     <section ref={containerRef} className="bg-background text-foreground py-16 md:py-24 flex flex-col gap-12 h-full">
-      <div className=" mx-auto px-5 text-center flex flex-col items-center h-ull gap-[6rem] text-wrap">
+      <div className=" mx-auto px-5 text-center flex flex-col items-center h-ull gap-[8rem] text-wrap py-[3 00px]">
         <motion.p
             className="text-[40px] md:text-[5rem] sm:text-[3rem] font-bold  h-full flex flex-wrap justify-center "
         >
@@ -42,15 +42,16 @@ const words = "Explore, Our, Collections".split(' ').map(w => w.trim());
         </motion.p>
       </div>
 
-      <div className="c  space-y-12">
-        {bandCards.map((card, i) => {
+      <div className="flex flex-col gap-16  px-4 sm:px-6 lg:px-8 py-12">
+        {collectionHomeCards.map((card, i) => {
+          
           const isEven = i % 2 === 0;
           const image = getPlaceholderImage(card.imageId);
 
           return (
             <motion.div
               key={i}
-              className={`grid md:grid-cols-2 bg-card text-card-foreground  overflow-hidden  min-h-[680px] ${
+              className={`grid  lg:grid-cols-2 bg-card text-card-foreground  overflow-hidden h-full ${
                 !isEven ? "md:[direction:rtl]" : ""
               }`}
                initial="hidden"
@@ -63,8 +64,8 @@ const words = "Explore, Our, Collections".split(' ').map(w => w.trim());
                }}
             >
               <div
-                className={`flex flex-col justify-center md:p-12 sm:p-4  p-4  ${
-                  !isEven ? "md:[direction:ltr]" : ""
+                className={`flex flex-col justify-center md:py-12 sm:py-4  py-4  ${
+                  !isEven ? "md:[direction:ltr] px-4" : ""
                 }`}
               >
                 <div className="text-sm font-semibold uppercase tracking-wide text-primary">
@@ -75,8 +76,8 @@ const words = "Explore, Our, Collections".split(' ').map(w => w.trim());
                   {card.excerpt}
                 </p>
 
-                <div className="mt-8">
-                  <Button asChild>
+                <div className="mt-8 ">
+                  <Button asChild className="rounded-none">
                     <Link href={card.link}>
                       View Collection
                     </Link>
@@ -85,7 +86,7 @@ const words = "Explore, Our, Collections".split(' ').map(w => w.trim());
               </div>
 
               <div
-                className="relative overflow-hidden min-h-[300px] md:min-h-full"
+                className="relative overflow-hidden lg:h-[600px] md:h-[800px] h-64"
               >
                  {card.type=== "image" ? (
                             <Image
