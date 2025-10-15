@@ -225,7 +225,7 @@ export const kidsCards: KidsCard[] = [
     description:
       "Soft, breathable, and durable — every piece designed to keep up with boundless energy and imagination.",
     link: "/collection/kids",
-    imageId: "kids-playtime",
+    imageId: "kid1",
     type: "image",
   },
   {
@@ -235,7 +235,34 @@ export const kidsCards: KidsCard[] = [
     description:
       "A splash of colors and joy — explore everyday wear crafted for adventure, discovery, and giggles.",
     link: "/lookbook/kids",
-    imageId: "kids-colorful",
+    imageId: "kid2",
+    type: "video",
+  }, {
+    id: "kids-feature-3",
+    title: "Colorful Days",
+    tagline: "Where Fun Meets Style.",
+    description:
+      "A splash of colors and joy — explore everyday wear crafted for adventure, discovery, and giggles.",
+    link: "/lookbook/kids",
+    imageId: "kid3",
+    type: "video",
+  }, {
+    id: "kids-feature-4",
+    title: "Colorful Days",
+    tagline: "Where Fun Meets Style.",
+    description:
+      "A splash of colors and joy — explore everyday wear crafted for adventure, discovery, and giggles.",
+    link: "/lookbook/kids",
+    imageId: "kid4",
+    type: "video",
+  }, {
+    id: "kids-feature-5",
+    title: "Colorful Days",
+    tagline: "Where Fun Meets Style.",
+    description:
+      "A splash of colors and joy — explore everyday wear crafted for adventure, discovery, and giggles.",
+    link: "/lookbook/kids",
+    imageId: "kid5",
     type: "video",
   },
 ];

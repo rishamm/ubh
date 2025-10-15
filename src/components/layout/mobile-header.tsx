@@ -55,7 +55,7 @@ export default function MobileHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-t-[5px] border-black bg-white shadow-sm">
-      <div className="container flex h-[70px] items-center justify-between w-full">
+      <div className="px-4 flex h-[70px] items-center justify-between w-full">
         <div className="flex justify-center">
           <Logo />
         </div>

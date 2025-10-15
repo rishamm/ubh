@@ -159,6 +159,46 @@
       "imageUrl": "/ml5.jpg",
       "imageHint": "men"
     
+     },
+      {
+      "id": "kid1",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/kl1.jpg",
+      "imageHint": "kid"
+    
+     },
+      {
+      "id": "kid2",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/kl2.jpg",
+      "imageHint": "kid"
+    
+     },
+      {
+      "id": "kid3",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/kl3.jpg",
+      "imageHint": "kid"
+    
+     },
+      {
+      "id": "kid4",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/kl4.jpg",
+      "imageHint": "kid"
+    
+     },
+      {
+      "id": "kid5",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/kl5.jpg",
+      "imageHint": "kid"
+    
      }
 
     ]

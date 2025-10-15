@@ -5,8 +5,8 @@ const stores = [
         name: 'Harmony Town Flagship',
         address: '123 Kinship Ave, Harmony Town, USA 12345',
         hours: 'Mon - Sat: 10am - 8pm, Sun: 11am - 6pm',
-        lat: 11.161333,
-        lng: 75.945028
+        lat: 11.161336,
+        lng: 75.945027
     },
     {
         name: 'Seaside Boutique',
@@ -59,7 +59,18 @@ export default function LocatePage() {
         <div className="mt-16 h-[600px] rounded-none overflow-hidden shadow-lg bg-secondary">
             <MapEmbed lat={primaryStore.lat} lng={primaryStore.lng} />
         </div>
-
+        <h1 className="mt-12 text-3xl font-bold tracking-tight text-left">
+          Store Address
+        </h1>
+        <div className="mt-8 text-left text-lg  text-black">
+           Neetanimal
+        </div>
+        <div className="mt-4 text-left text-lg  text-black">
+           Malappuram
+        </div>
+         <div className="mt-4 text-left text-lg  text-black">
+           673637
+        </div>
       </div>
     </div>
   );

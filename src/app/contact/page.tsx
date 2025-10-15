@@ -30,17 +30,28 @@ export default function ContactPage() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: 'Message Sent!',
-      description: "Thank you for reaching out. We'll get back to you shortly.",
-    });
-    form.reset();
-  }
+  const message = `Hi, I'm ${values.name} (${values.email}${values.phone ? `, ${values.phone}` : ''}).\n${values.message}`;
+  const encodedMessage = encodeURIComponent(message);
+
+  // Replace the number below with your business WhatsApp number (with country code, no + or spaces)
+  const whatsappNumber = '919074836314'; // example: 91 + phone number
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+  // Open WhatsApp chat with the prefilled message
+  window.open(whatsappUrl, '_blank');
+
+  toast({
+    title: 'Opening WhatsApp...',
+    description: 'You can now send your message directly.',
+  });
+
+  form.reset();
+}
+
 
   return (
     <div className="bg-primary text-primary-foreground min-h-[calc(100vh-75px)]">
-      <div className="container grid md:grid-cols-2 gap-12 lg:gap-16 items-start py-16 md:py-24">
+      <div className="px-4 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start py-16 md:py-24">
         {/* Left Column */}
         <div className="flex flex-col justify-between h-full pt-4">
           <h1 className="text-6xl md:text-8xl font-bold uppercase leading-none">
@@ -64,17 +75,17 @@ export default function ContactPage() {
 
         {/* Right Column (Form) */}
         <div className="bg-[#141414] border-t-4 h-full">
-          <div className=" px-4 py-4 h-full">
-            <h2 className="text-4xl font-thin uppercase mb-8">Start the Conversation</h2>
+          <div className=" pt-4 flex flex-col justify-between h-full">
+            <h2 className="text-4xl font-thin uppercase mb-8 px-4">Start the Conversation</h2>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 ">
                 <FormField
                   control={form.control}
                   name="name"
                   render={({ field }) => (
-                    <FormItem>
+                    <FormItem className='px-4'>
                       <FormControl>
-                        <Input placeholder="Name" {...field} className="form-input-dark" />
+                        <Input placeholder="Name" {...field} className="form-input-dark " />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -85,7 +96,7 @@ export default function ContactPage() {
                     control={form.control}
                     name="email"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className='px-4'>
                         <FormControl>
                           <Input placeholder="Email" {...field} className="form-input-dark" />
                         </FormControl>
@@ -97,7 +108,7 @@ export default function ContactPage() {
                     control={form.control}
                     name="phone"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className='px-4'>
                         <FormControl>
                           <Input placeholder="Phone" {...field} className="form-input-dark" />
                         </FormControl>
@@ -110,7 +121,7 @@ export default function ContactPage() {
                   control={form.control}
                   name="message"
                   render={({ field }) => (
-                    <FormItem>
+                    <FormItem className='px-4'>
                       <FormControl>
                         <Textarea placeholder="Message" className="form-input-dark min-h-[150px]" {...field} />
                       </FormControl>
@@ -118,17 +129,17 @@ export default function ContactPage() {
                     </FormItem>
                   )}
                 />
-              
-              </form>
-            </Form>
-          </div>
-            <Button 
+               <Button 
                   type="submit" 
                   className="w-full bg-secondary text-primary hover:bg-secondary/90 text-lg py-6 rounded-none " 
                   disabled={form.formState.isSubmitting}
                 >
                   {form.formState.isSubmitting ? 'Sending...' : 'Send a Message'}
                 </Button>
+              </form>
+            </Form>
+          </div>
+           
         </div>
       </div>
     </div>

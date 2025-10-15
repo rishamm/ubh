@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
 import { Button } from '../ui/button';
+import Image from 'next/image';
 
 const socialLinks = [
  
@@ -30,12 +31,17 @@ function Logo() {
 export default function Footer() {
   return (
     <footer className="bg-secondary">
-      <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className=" px-5 py-12 px-4 sm:px-6 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-             <Logo />
+             {/* <Logo /> */}
+              <div className='flex justify-start'>
+                       <Image src="/logo.svg" alt="Description" width={200} height={200} unoptimized/>
+                     </div>
             <p className="text-base">
-              Weaving your family's story, one thread at a time.
+             Different countries,
+Different cultures,
+One signature UBH
             </p>
             <div className="flex space-x-6">
               {socialLinks.map((item) => (

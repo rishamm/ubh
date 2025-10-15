@@ -13,6 +13,7 @@ export default function Home() {
       <AnimatedHeading words={"Our,Crafts"} bgColor='bg-black' textColor='text-white' textSize=' md:text-[6rem]'/>
       <VideoSection />
       <HomeCollections/>
+      
     </>
   );
 }

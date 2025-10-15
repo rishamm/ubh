@@ -2,6 +2,7 @@
 import { getPlaceholderImage } from '@/lib/image-helper';
 import LookbookGallery from '@/components/lookbook-gallery';
 import { motion } from 'framer-motion';
+import { kidsCards } from '@/lib/band-data';
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -13,17 +14,11 @@ const sectionVariants = {
 };
 
 export default function LookbookPage() {
-    const lookbookImages = [
-        getPlaceholderImage('child-tuxedo'),
-        getPlaceholderImage('child-corduroy'),
-        getPlaceholderImage('child-sun-hat'),
-        getPlaceholderImage('lookbook-boys'),
-        getPlaceholderImage('dad-boardshorts'),
-    ];
+    const lookbookImages = kidsCards.map(card => getPlaceholderImage(card.imageId));
 
   return (
     <div className="bg-background">
-      <div className="container py-16 md:py-24">
+      <div className=" py-16 md:py-24">
         <motion.div
             className="text-center max-w-3xl mx-auto"
             initial="hidden"
