@@ -28,8 +28,9 @@ export default function LookbookLandingPage() {
                                                              src={image.imageUrl}
                                                              alt={image.imageHint || "Banner media"}
                                                              fill
-                                                             className="object-cover"
+                                                             className="object-cover object-top"
                                                              priority
+                                                             unoptimized
                                                            />
                                                          ) : (
                                                            <video

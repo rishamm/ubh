@@ -84,6 +84,7 @@ export default function HomeAboutSection() {
                   fill
                   className="object-cover"
                   data-ai-hint={image1.imageHint}
+                  unoptimized
                 />
               </motion.div>
             </motion.div>
@@ -130,6 +131,7 @@ export default function HomeAboutSection() {
                   fill
                   className="object-cover"
                   data-ai-hint={image2.imageHint}
+                  unoptimized
                 />
               </motion.div>
             </motion.div>

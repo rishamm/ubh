@@ -56,6 +56,7 @@ export default function LookbookGallery({ images }: LookbookGalleryProps) {
             height={1000}
             className="lookbook-gallery__image"
             data-ai-hint={image.imageHint}
+            unoptimized
           />
         </motion.div>
       ))}

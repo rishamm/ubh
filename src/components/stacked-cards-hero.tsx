@@ -79,12 +79,14 @@ export default function StackedCardsHero() {
               <div className="c-card-mobile" key={i}>
                 <figure className="c-card__figure-mobile">
                   {card.type === "image" ? (
+                    console.log(image.imageUrl),
                     <Image
                       src={image.imageUrl}
                       alt={image.imageHint || "Banner media"}
                       fill
                       className="object-cover"
                       priority
+                        unoptimized
                     />
                   ) : (
                     <video
@@ -131,6 +133,7 @@ export default function StackedCardsHero() {
                     fill
                     className="object-cover"
                     priority
+                     unoptimized
                   />
                 ) : (
                   <video

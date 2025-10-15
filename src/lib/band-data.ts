@@ -100,7 +100,7 @@ export const menCards: MenCard[] = [
     description:
       "Explore a collection built on refined textures, sharp tailoring, and everyday versatility — crafted for the modern man.",
     link: "/collection/men",
-    imageId: "men-urban",
+    imageId: "men-1",
     type: "image",
   },
   {
@@ -110,8 +110,37 @@ export const menCards: MenCard[] = [
     description:
       "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
     link: "/lookbook/men",
-    imageId: "men-monochrome",
-    type: "video",
+    imageId: "men-2",
+    type: "image",
+  },
+   {
+    id: "men-feature-3",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "men-3",
+    type: "image",
+  },
+   {
+    id: "men-feature-4",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "men-4",
+    type: "image",
+  }, {
+    id: "men-feature-5",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "men-5",
+    type: "image",
   },
 ];
 
@@ -124,7 +153,70 @@ export type KidsCard = {
   imageId: string;
   type: "image" | "video";
 };
+export type WomenCard = {
+  id: string;
+  title: string;
+  tagline: string;
+  description: string;
+  link: string;
+  imageId: string;
+  type: "image" | "video";
+};
 
+
+export const womenCards: WomenCard[] = [
+  {
+    id: "women-1",
+    title: "Urban Essentials",
+    tagline: "Minimal Form. Maximum Presence.",
+    description:
+      "Explore a collection built on refined textures, sharp tailoring, and everyday versatility — crafted for the modern woman.",
+    link: "/collection/women",
+    imageId: "women-1",
+    type: "image",
+  },
+  {
+    id: "women-2",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "women-2",
+    type: "image",
+  },
+    {
+    id: "women-3",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "women-3",
+    type: "image",
+  },
+   {
+    id: "women-4",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "women-4",
+    type: "image",
+  }, {
+    id: "women-5",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "women-5",
+    type: "image",
+  },
+  
+
+];
 export const kidsCards: KidsCard[] = [
   {
     id: "kids-feature-1",

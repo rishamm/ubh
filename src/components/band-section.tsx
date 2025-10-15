@@ -113,6 +113,7 @@ export default function BandSection() {
                   className="object-cover"
                   data-ai-hint={image.imageHint}
                   priority
+                  unoptimized
                 />
               </motion.figure>
             </motion.div>

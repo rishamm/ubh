@@ -21,6 +21,8 @@ export default function ProductCard({ item }: ProductCardProps) {
             height={800}
             className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
             data-ai-hint={image.imageHint}
+            priority
+            unoptimized
           />
         </div>
       </CardHeader>

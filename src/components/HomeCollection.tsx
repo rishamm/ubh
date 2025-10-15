@@ -95,6 +95,7 @@ const words = "Explore, Our, Collections".split(' ').map(w => w.trim());
                               fill
                               className="object-cover"
                               priority
+                              unoptimized
                             />
                           ) : (
                             <video

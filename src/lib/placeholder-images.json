@@ -61,7 +61,7 @@
       "id": "lookbook-cover-women",
       "type": "image",
       "description": "Hero video showcasing women's collection in motion",
-      "imageUrl": "/women.png",
+      "imageUrl": "/mc1.jpg",
       "imageHint": "women"
     
      },
@@ -69,17 +69,97 @@
       "id": "lookbook-cover-men",
       "type": "image",
       "description": "Hero video showcasing women's collection in motion",
-      "imageUrl": "/ml1.jpg",
-      "imageHint": "women"
+      "imageUrl": "/menc1.jpg",
+      "imageHint": "men"
     
      },
      {
       "id": "lookbook-cover-kids",
       "type": "image",
       "description": "Hero video showcasing women's collection in motion",
-      "imageUrl": "/kc2.jpg",
+      "imageUrl": "/kidc1.jpg",
       "imageHint": "women"
     
+     },
+     {
+      "id": "women-1",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/wl1.jpg",
+      "imageHint": "women"
+    
+     },
+     {
+      "id": "women-2",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/wl2.jpg",
+      "imageHint": "women"
+    
+     },
+     {
+      "id": "women-3",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/wl3.jpg",
+      "imageHint": "women"
+    
+     },
+     {
+      "id": "women-4",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/mc1.jpg",
+      "imageHint": "women"
+    
+     },
+     {
+      "id": "women-5",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/wl5.jpeg",
+      "imageHint": "women"
+    
+     }, {
+      "id": "men-1",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/ml1.jpg",
+      "imageHint": "men"
+    
+     },
+      {
+      "id": "men-2",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/ml2.jpg",
+      "imageHint": "men"
+    
+     },
+      {
+      "id": "men-3",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/ml3.jpg",
+      "imageHint": "men"
+    
+     },
+      {
+      "id": "men-4",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/ml4.jpg",
+      "imageHint": "men"
+    
+     },
+      {
+      "id": "men-5",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/ml5.jpg",
+      "imageHint": "men"
+    
      }
+
     ]
 }
