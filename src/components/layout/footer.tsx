@@ -3,9 +3,9 @@ import { Facebook, Instagram, Twitter } from 'lucide-react';
 import { Button } from '../ui/button';
 
 const socialLinks = [
-  { name: 'Facebook', icon: Facebook, href: '#' },
-  { name: 'Instagram', icon: Instagram, href: '#' },
-  { name: 'Twitter', icon: Twitter, href: '#' },
+ 
+  { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/ubh_clothing/' },
+
 ];
 
 const companyLinks = [
