@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="space-y-8 xl:col-span-1">
              {/* <Logo /> */}
               <div className='flex justify-start'>
-                       <Image src="/logo.svg" alt="Description" width={200} height={200} unoptimized/>
+                       <Image src="/logo.png" alt="Description" width={200} height={200} unoptimized/>
                      </div>
             <p className="text-base">
              Different countries,

@@ -99,7 +99,7 @@ export const menCards: MenCard[] = [
     tagline: "Minimal Form. Maximum Presence.",
     description:
       "Explore a collection built on refined textures, sharp tailoring, and everyday versatility — crafted for the modern man.",
-    link: "/collection/men",
+    link: "/lookbook/men",
     imageId: "men-1",
     type: "image",
   },
@@ -171,7 +171,7 @@ export const womenCards: WomenCard[] = [
     tagline: "Minimal Form. Maximum Presence.",
     description:
       "Explore a collection built on refined textures, sharp tailoring, and everyday versatility — crafted for the modern woman.",
-    link: "/collection/women",
+    link: "/lookboob/women",
     imageId: "women-1",
     type: "image",
   },
@@ -224,7 +224,7 @@ export const kidsCards: KidsCard[] = [
     tagline: "Made to Move, Built to Last.",
     description:
       "Soft, breathable, and durable — every piece designed to keep up with boundless energy and imagination.",
-    link: "/collection/kids",
+    link: "/lookbook/kids",
     imageId: "kid1",
     type: "image",
   },

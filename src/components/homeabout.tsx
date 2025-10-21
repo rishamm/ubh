@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { getPlaceholderImage } from '@/lib/image-helper';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import  Link  from 'next/link';
 
 export default function HomeAboutSection() {
   const image1 = getPlaceholderImage('about-home-first');
@@ -139,15 +140,19 @@ export default function HomeAboutSection() {
         </div>
 
         {/* Button */}
+        <Link href="/about">
+       
         <motion.button
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
           viewport={{ once: true }}
           className="flex w-full bg-[#888282] py-6 justify-center text-white items-center text-lg hover:bg-white hover:text-black transition-colors duration-300 mt-0"
+         
         >
           Learn More
         </motion.button>
+         </Link>
       </motion.div>
     </section>
   );

@@ -1,17 +1,21 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { getPlaceholderImage } from "@/lib/image-helper";
 import { bandCards } from "@/lib/band-data";
 import { useScreenSize } from "@/hooks/use-screen-size";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function StackedCardsHero() {
   const componentRef = useRef(null);
   const { isMobile } = useScreenSize();
+
+ const [mounted, setMounted] = useState (false);
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -104,9 +108,7 @@ export default function StackedCardsHero() {
                   <h1 className="c-card__title-mobile">{card.title}</h1>
                   <div className="c-card__excerpt-mobile">{card.excerpt}</div>
                   <div className="c-card__cta-mobile">
-                    <a href={card.link} target="_blank" rel="noreferrer">
-                      view in detail
-                    </a>
+                   <Link href={card.link}>View in detail</Link>
                   </div>
                 </div>
               </div>
@@ -151,9 +153,7 @@ export default function StackedCardsHero() {
                 <h1 className="c-card__title">{card.title}</h1>
                 <div className="c-card__excerpt">{card.excerpt}</div>
                 <div className="c-card__cta">
-                  <a href={card.link} target="_blank" rel="noreferrer">
-                    view in detail
-                  </a>
+                  <Link href={card.link}>View in detail</Link>
                 </div>
               </div>
             </div>
