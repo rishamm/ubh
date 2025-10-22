@@ -103,7 +103,7 @@ UBH Clothing.`
               transition={{ duration: 0.8, ease: 'easeOut', delay: i * 0.15 }}
               viewport={{ once: true, amount: 0.3 }}
             >
-               {text}
+                 {text}
             </motion.p>
           ))}
         </div>
