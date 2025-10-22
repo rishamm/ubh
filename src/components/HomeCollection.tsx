@@ -7,6 +7,7 @@ import { getPlaceholderImage } from "@/lib/image-helper";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { useRef } from "react";
+import { useScreenSize } from "@/hooks/use-screen-size";
 
 export default function HomeCollections() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -16,7 +17,7 @@ export default function HomeCollections() {
   });
 
 const words = "Explore, Our, Collections".split(' ').map(w => w.trim());
-
+   const { isMobile } = useScreenSize();
 
   return (
     <section ref={containerRef} className="bg-background text-foreground py-16 md:py-24 flex flex-col gap-12 h-full">
@@ -65,7 +66,7 @@ const words = "Explore, Our, Collections".split(' ').map(w => w.trim());
             >
               <div
                 className={`flex flex-col justify-center md:py-12 sm:py-4  py-4  ${
-                  !isEven ? "md:[direction:ltr] px-4" : ""
+                  !isEven ? "md:[direction:ltr] lg:px-4 px-0" : ""
                 }`}
               >
                 <div className="text-sm font-semibold uppercase tracking-wide text-primary">
