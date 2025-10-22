@@ -107,9 +107,6 @@ UBH Clothing.`
             </motion.p>
           ))}
         </div>
-        <div className='flex justify-center mb-20'>
-          <Image src="/logo.png" alt="Description" width={200} height={200} unoptimized/>
-        </div>
       </div>
     </div>
   );

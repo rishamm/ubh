@@ -18,21 +18,21 @@
       "id": "men",
       "type": "image",
       "description": "Relaxed beach day fashion for the whole family",
-      "imageUrl": "/men1.png",
+      "imageUrl": "/men1.JPG",
       "imageHint": "family beach"
     },
     {
       "id": "kids",
       "type": "image",
       "description": "Kids's lookbook highlighting minimal and elegant styles",
-      "imageUrl": "/kid1.png",
+      "imageUrl": "/kid1.jpg",
       "imageHint": "Kids"
     },
     {
       "id": "about-home-first",
       "type": "image",
       "description": "Kids's lookbook highlighting minimal and elegant styles",
-      "imageUrl": "/img1.png",
+      "imageUrl": "/ab1.jpg",
       "imageHint": "Kids"
     },
     {
@@ -46,14 +46,14 @@
       "id": "home-collection-kids",
       "type": "image",
       "description": "Kids's lookbook highlighting minimal and elegant styles",
-      "imageUrl": "/kc2.jpg",
+      "imageUrl": "/kc1.jpg",
       "imageHint": "Kids"
     },
      {
       "id": "home-collection-women",
       "type": "image",
       "description": "Hero video showcasing women's collection in motion",
-      "imageUrl": "/women.png",
+      "imageUrl": "/wc1.jpg",
       "imageHint": "women"
     
      },

@@ -11,7 +11,7 @@ const Preloader = ({ show }: { show: boolean }) => {
     };
   }, [show]);
 
-  if (!show) return null; // don't render preloader at all after first load
+
 
   return (
     <div className="flex flex-col">

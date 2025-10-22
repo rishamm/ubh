@@ -2,7 +2,9 @@
 
 import Image from 'next/image';
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import LookbookViewer from './lookbook-viewer';
 
 interface LookbookGalleryProps {
   images: ImagePlaceholder[];
@@ -25,19 +27,20 @@ const imageVariants = {
 export default function LookbookGallery({ images }: LookbookGalleryProps) {
   // Ensure we have at least 5 images, or repeat if necessary.
   const galleryImages = Array.from({ length: 5 }, (_, i) => images[i % images.length]);
+    const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+    
+
+  const handleImageClick = (index: number) => {
+    setSelectedImageIndex(index);
+  };
+
+  const handleClose = () => {
+    setSelectedImageIndex(null);
+  };
 
   return (
-    <div className="lookbook-gallery">
-      <div className="lookbook-gallery__overlay-text">
-        <motion.span
-            initial={{ opacity: 0, y: 50}}
-            whileInView={{ opacity: 1, y: 0}}
-            transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut'}}
-            viewport={{ once: true, amount: 0.5 }}
-        >
-            UBH
-        </motion.span>
-      </div>
+    <div className="lookbook-gallery ">
+     
 
       {galleryImages.map((image, i) => (
         <motion.div
@@ -48,6 +51,8 @@ export default function LookbookGallery({ images }: LookbookGalleryProps) {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={imageVariants}
+           onClick={() => handleImageClick(i)}
+          style={{cursor: 'pointer'}}
         >
           <Image
             src={image.imageUrl}
@@ -60,6 +65,16 @@ export default function LookbookGallery({ images }: LookbookGalleryProps) {
           />
         </motion.div>
       ))}
+      
+      <AnimatePresence>
+        {selectedImageIndex !== null && (
+          <LookbookViewer
+            images={galleryImages}
+            selectedIndex={selectedImageIndex}
+            onClose={handleClose}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

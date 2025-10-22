@@ -93,7 +93,7 @@ const words = "Explore, Our, Collections".split(' ').map(w => w.trim());
                               src={image.imageUrl}
                               alt={image.imageHint || "Banner media"}
                               fill
-                              className="object-cover"
+                              className="object-cover "
                               priority
                               unoptimized
                             />
