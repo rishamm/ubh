@@ -142,6 +142,46 @@ export const menCards: MenCard[] = [
     imageId: "men-5",
     type: "image",
   },
+   {
+    id: "men-feature-6",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "men-6",
+    type: "image",
+  },
+   {
+    id: "men-feature-7",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "men-7",
+    type: "image",
+  },
+   {
+    id: "men-feature-8",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "men-8",
+    type: "image",
+  },
+   {
+    id: "men-feature-9",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "men-9",
+    type: "image",
+  },
 ];
 
 export type KidsCard = {
@@ -214,7 +254,46 @@ export const womenCards: WomenCard[] = [
     imageId: "women-5",
     type: "image",
   },
-  
+  {
+    id: "women-6",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "women-6",
+    type: "image",
+  },
+  {
+    id: "women-7",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "women-7",
+    type: "image",
+  },
+  {
+    id: "women-8",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "women-8",
+    type: "image",
+  },
+  {
+    id: "women-9",
+    title: "Monochrome Edit",
+    tagline: "The Power of Subtlety.",
+    description:
+      "A play of structure and simplicity. Discover monochrome pieces that redefine understated elegance.",
+    link: "/lookbook/men",
+    imageId: "women-9",
+    type: "image",
+  }
 
 ];
 export const kidsCards: KidsCard[] = [

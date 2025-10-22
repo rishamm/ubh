@@ -120,6 +120,34 @@
       "imageUrl": "/wl5.jpeg",
       "imageHint": "women"
     
+     },{
+      "id": "women-6",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/w6.jpg",
+      "imageHint": "women"
+    
+     },{
+      "id": "women-7",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/w7.jpg",
+      "imageHint": "women"
+    
+     },{
+      "id": "women-8",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/w8.jpg",
+      "imageHint": "women"
+    
+     },{
+      "id": "women-9",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/w9.jpg",
+      "imageHint": "women"
+    
      }, {
       "id": "men-1",
       "type": "image",
@@ -157,6 +185,34 @@
       "type": "image",
       "description": "Hero video showcasing women's collection in motion",
       "imageUrl": "/ml5.jpg",
+      "imageHint": "men"
+    
+     },{
+      "id": "men-6",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/m1.jpg",
+      "imageHint": "men"
+    
+     },{
+      "id": "men-7",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/m2.jpg",
+      "imageHint": "men"
+    
+     },{
+      "id": "men-8",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/m3.jpg",
+      "imageHint": "men"
+    
+     },{
+      "id": "men-9",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/m4.jpg",
       "imageHint": "men"
     
      },
@@ -199,7 +255,90 @@
       "imageUrl": "/kl5.jpg",
       "imageHint": "kid"
     
+     },
+      {
+      "id": "home-1",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/home-1.jpg",
+      "imageHint": "kid"
+    
+     },
+      {
+      "id": "home-5",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/home-5.jpg",
+      "imageHint": "kid"
+    
+     },
+      {
+      "id": "home-6",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/ab2.jpeg",
+      "imageHint": "kid"
+    
+     },
+      {
+      "id": "home-7",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/ab2.jpeg",
+      "imageHint": "kid"
+    
      }
-
+     ,
+      {
+      "id": "home-8",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/home-7.jpg",
+      "imageHint": "kid"
+    
+     },
+      {
+      "id": "home-9",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/home-8.jpg",
+      "imageHint": "kid"
+    
+     },
+      {
+      "id": "home-10",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/home-10.jpg",
+      "imageHint": "kid"
+    
+     }
+,
+      {
+      "id": "home-11",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/home-11.jpg",
+      "imageHint": "kid"
+    
+     }
+,
+      {
+      "id": "home-3",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/home-3.jpg",
+      "imageHint": "kid"
+    
+     }
+     ,
+      {
+      "id": "home-4",
+      "type": "image",
+      "description": "Hero video showcasing women's collection in motion",
+      "imageUrl": "/home12.jpg",
+      "imageHint": "kid"
+    
+     }
     ]
 }

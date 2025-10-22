@@ -21,7 +21,7 @@ export default function ParallaxPage() {
         {/* Background layer */}
         <motion.div
           style={{ y }}
-          className="absolute inset-0 bg-[url('https://www.toptal.com/designers/subtlepatterns/patterns/sakura.png')] bg-repeat bg-black scale-110"
+          className="absolute inset-0  bg-repeat bg-center bg-[url('/home0.jpg')] bg-cover scale-110"
         />
 
         {/* Heading */}

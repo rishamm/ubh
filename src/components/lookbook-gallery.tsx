@@ -26,7 +26,7 @@ const imageVariants = {
 
 export default function LookbookGallery({ images }: LookbookGalleryProps) {
   // Ensure we have at least 5 images, or repeat if necessary.
-  const galleryImages = Array.from({ length: 5 }, (_, i) => images[i % images.length]);
+  const galleryImages = Array.from({ length: 9 }, (_, i) => images[i % images.length]);
     const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
     
 
