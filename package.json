@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack -p 9002",
-     "export": "next export",
-      "build": "next build",
-  "build-static": "next build" ,
+    "export": "next export",
+    "build": "next build",
+    "build-static": "next build",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
@@ -43,7 +43,7 @@
     "framer-motion": "^11.5.10",
     "gsap": "^3.12.5",
     "lucide-react": "^0.475.0",
-    "next": "^15.3.3",
+    "next": "15.3.8",
     "patch-package": "^8.0.0",
     "react": "^18.3.1",
     "react-day-picker": "^8.10.1",
